@@ -1,0 +1,27 @@
+block요소 inline 요소
+
+x(가로)축을 기준으로 하는건 inline
+span , a, input [줄안바꿔줌]
+
+y(세로)축을 기준으로 하는건 block
+h1~h6 , p , header , section , main , aside , footer , div ,li [줄바꿔줌]
+
+li는 display 설정으로 inline 형식으로 바꿀수 있음 display : inline
+
+CSS 예시
+가방 {
+	너비 : 30cm;
+	높이 : 30cm;
+	색상 : 빨강;
+}
+
+CSS의 세가지 방식
+인터널 : 문서안에 <style> 태그를 이용하여 적용
+인라인 : 문서안에 style 속성을 사용하여 적용
+익스터널 : CSS파일을 생성하여 문서와 연동시키는 방식
+
+CSS선택자
+디자인 작업을 진행할 영역을 선택하는 요소
+type , id , class로 구분함
+id와 class의 차이 id는 고유이름이고 class는 별명같은것 id는 하나밖에 못쓰지만 class는 여러개 가능
+<h3 class="class size">class 선택자</h3> <-- class로 color와 size를 썼음

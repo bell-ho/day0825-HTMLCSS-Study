@@ -1,0 +1,21 @@
+/* 익스터널방식 */
+@charset "UTF-8";
+h1{
+	font-style:italic; 
+}
+
+#id{
+	background-color: blue;
+}
+
+.color{
+	color: red;
+}
+
+.size{
+	font-size: 100px;
+}
+
+#bg{
+	background-color: blue
+}
