@@ -25,3 +25,7 @@ CSS선택자
 type , id , class로 구분함
 id와 class의 차이 id는 고유이름이고 class는 별명같은것 id는 하나밖에 못쓰지만 class는 여러개 가능
 <h3 class="class size">class 선택자</h3> <-- class로 color와 size를 썼음
+
+CSS선택지 우선순위
+인라인 방식 > id 선택자 > class선택자 > type선택자
+

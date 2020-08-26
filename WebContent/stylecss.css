@@ -1,7 +1,12 @@
 /* 익스터널방식 */
 @charset "UTF-8";
-h1{
+header h1{
 	font-style:italic; 
+	color: blue;
+}
+
+header p{
+	color: blue;
 }
 
 #id{
@@ -18,4 +23,42 @@ h1{
 
 #bg{
 	background-color: blue
+}
+
+header{
+	color: red;
+}
+
+.place{
+	width: 500px;
+	height: 500px;
+	background-color: yellow;
+}
+
+.font{
+	font-size: 50px; /* 크기 */
+	font-family: Arial, Times , sans-serif; /* 글꼴 */
+	font-style: italic; /* 글자모양 */
+	font-weight: bold; /* 굵기 */
+}
+
+.background{
+	width: 500px; 
+	height:500px; 
+	
+	/* 	배경색 */
+	background-color: yellow; 
+	
+	/*  	배경이미지 */
+ 	background-image: url('rice.png'); 
+	/*  	background-image: url('sky.jpg');  */
+ 	
+	/*배경이미지 반복효과*/
+	background-repeat: no-repeat; 
+	
+	/*배경 이미지 좌표*/
+	background-position: 40px 100px; 
+	
+	/* 한줄로표현 */
+/* 	background: yellow url("rice.png") no-repeat left; */
 }
