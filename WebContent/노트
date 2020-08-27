@@ -29,3 +29,23 @@ id와 class의 차이 id는 고유이름이고 class는 별명같은것 id는 하나밖에 못쓰지만 cl
 CSS선택지 우선순위
 인라인 방식 > id 선택자 > class선택자 > type선택자
 
+2차원 세계 static 속성값
+1.static속성값은 부모 자식간에 발생하는 마진 병합현상이 일어남
+2.top bottom right left 속성 적용 안됨
+3.부모의 높이가 없으면 자식의 높이가 부모 높이가됨
+
+3차원 세계 fixed 속성값
+fixed 속성값은
+1.부모 자식간의 마진병합이 없음
+2.top bottom right left 속성 적용 가능
+3.부모가 높이가 없어도 자식의 높이에 영향을 받지 않음
+
+2차원 3차원의 세계 relative 속성값
+1.부모 자식간에 발생하는 마진병합
+2.top bottom right left 속성 적용 가능
+3.부모의 높이가 없으면 자식의 높이가 부모 높이가됨
+
+3차원의 세계 absolute
+1.부모 자식간의 마진병합이 없음
+2.top bottom right left 속성 적용 가능 단, 부모의 position에 따라 기준점이 달라짐
+3.부모가 높이가 없어도 자식의 높이에 영향을 받지 않음

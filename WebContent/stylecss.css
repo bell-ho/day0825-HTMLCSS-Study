@@ -1,5 +1,6 @@
 /* 익스터널방식 */
 @charset "UTF-8";
+
 header h1{
 	font-style:italic; 
 	color: blue;
@@ -30,35 +31,191 @@ header{
 }
 
 .place{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.font{
+	font-size: 50px; 크기
+	font-family: Arial, Times , sans-serif; 글꼴
+	font-style: italic; 글자모양
+	font-weight: bold; 굵기
+}
+
+.background{
+	width: 100px;
+	height: 100px;
+
+	배경색
+	background-color: yellow; 
+
+ 	배경이미지
+ 	background-image: url('rice.png'); 
+ 	background-image: url('sky.jpg'); 
+
+배경이미지 반복효과
+	background-repeat: no-repeat; 
+
+배경 이미지 좌표
+	background-position: 40px 100px; 
+
+한줄로표현
+	background: yellow url("rice.png") no-repeat left;
+}
+
+#box_model{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border: solid 20px red;
+	margin-left: 50px;
+	padding-left: 50px;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+/* div{ */
+/* 	width: 100px; */
+/* 	height: 100px; */
+/* 	background-color: yellow; */
+/* } */
+
+#first{
+	width: 100%;
+	height: 300px;
+	background-color: yellow;
+	margin-bottom: 100px;
+}
+
+#second{ 
+	width: 100%;
+	height: 200px;
+	background-color: blue;
+}
+	
+#parent{
+	width: 100%;
+	height: 500px;
+	background-color: yellow;
+}
+	
+	#child{
+	 position:absolute; 자신만 적용함 마진병합현상 방지
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		margin-top: 100px;
+	}
+	
+	span{
+		display:block;
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		margin-bottom: 100px;
+	}
+	
+	h1{
+		display:inline;
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		margin-bottom: 100px;
+	}
+	
+	h2{
+		display:inline-block;
+		width: 100px;
+		height:100px;
+		background-color: blue;
+		margin-bottom: 100px;
+	}
+	
+	#position_static-parent{
+		width: 150px;
+		부모가 높이를 갖고 있지 않으면 자식의 높이가 부모에게 영향을 줌
+		height:150px;
+		background-color: blue;
+	}
+	
+	#position_static_parent{
+		position: static;
+		width: 100px;
+		height:100px;
+		background-color: yellow;
+		margin-top: 100px;
+	}
+
+#position_fixed_parent {
 	width: 500px;
 	height: 500px;
 	background-color: yellow;
 }
 
-.font{
-	font-size: 50px; /* 크기 */
-	font-family: Arial, Times , sans-serif; /* 글꼴 */
-	font-style: italic; /* 글자모양 */
-	font-weight: bold; /* 굵기 */
+#position_fixed_child {
+	/* 	fixed 속성값은 선택된 태그를 화면에 고정시킨다 */
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+ 	margin-top: 100px; /*fixed에선 margin-top이 최초의 박스 생성위치를 기준 */
+/* 	top: 100px;  브라우저 상단을 기준*/
 }
 
-.background{
-	width: 500px; 
-	height:500px; 
+#box2 {
+	width: 500px;
+	height: 2000px;
+	background-color: purple;
+}
+
+#box1 {
+	width: 500px;
+	height: 200px;
+	background-color: gray;
+}
+
+
+
+#position_relative_parent{
+	width: 500px;
+/* 	height: 500px; */
+	background-color: yellow;
+}
+
+#position_relative_child {
+	/* 	fixed 속성값은 선택된 태그를 화면에 고정시킨다 */
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
 	
-	/* 	배경색 */
-	background-color: yellow; 
+ 	/* 부모자식간에 마진병합이 일어남 */
+ 	/* margin-top: 100px;  */
+
+	/* relative에선 top이 최초의 박스 생성위치를 기준 */
+/*  	top: 100px; */
+}
+
+#position_absolute_parent{
+/* 	position:relative; */
+	width: 500px;
+/* 	height: 500px; */
+	background-color: yellow;
+}
+
+#position_absolute_child{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
 	
-	/*  	배경이미지 */
- 	background-image: url('rice.png'); 
-	/*  	background-image: url('sky.jpg');  */
- 	
-	/*배경이미지 반복효과*/
-	background-repeat: no-repeat; 
-	
-	/*배경 이미지 좌표*/
-	background-position: 40px 100px; 
-	
-	/* 한줄로표현 */
-/* 	background: yellow url("rice.png") no-repeat left; */
+	/* 부모자식간에 마진병합이 안일어남 */
+	/* 	margin-top: 100px; */
+
+	/* 	브라우저 기준 */
+/* 	top: 100px */
 }
