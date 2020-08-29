@@ -1,0 +1,129 @@
+/********************
+*** Default ***
+********************/
+
+/* html과 body태그 안에 있는 마진과 패딩 초기화 */
+html , body{
+	margin: 0;
+	padding: 0;
+}
+
+/* 브라우저 x축을 벗어나는 모든 요소를 감추기 위해 overflow-x:hidden 적용
+   창밖으로 나가는 콘텐츠를 방지하고 가로 스크롤이 생기지않게 하기 위해 꼭 적용*/
+body{
+	overflow-x:hidden; 
+}
+
+/* h1~p태그 안에 있는 마진과 패딩 초기화 */
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+
+/* 버튼 안에 css 속성 초기화 */
+button{
+	border: none;
+	
+/* 	배경색을 투명하게 */
+	background-color: transparent;
+}
+
+#intro{
+	width:100%;
+	height: 1600px;
+	background-image: url(../img/intro/intro_bg.png);
+/* 	padding-top: 100px; 전체길이가 늘어나서 못써먹음 */
+
+	
+}
+#intro .introWrap{
+	/*introWrap 서랍장을 2차원과 3차원 특징으로 변경 */
+ 	position: relative; 
+ 	width: 760px;
+ 	height: 516px;
+ 	background-color: yellow;
+ 	
+/*  intro 공간을 기준으로 introWrap서랍장 왼쪽면이 50%로 이동 */
+ 	left: 50%;
+ 	
+/*  introWrap 서랍장의 760의 절반값을 적용함 그러면 
+	서랍장 왼쪽으로 절반(380)만큼 당겨지면서 중간으로 감 */
+ 	margin-left: -380px;
+ 	
+/*  margin-top: 100px; 부모에까지 영향을 미쳐서 마진병합현상이 일어나 못씀 */
+
+	top: 100px;
+	
+}
+#intro .introWrap .logo{
+/* 	로고를 3차원 특징으로 변경 */
+	position: absolute;
+	width: 760px;
+	height: 516px;
+	background-image: url(../img/intro/logo.png);
+	z-index: 100;
+}
+#intro .introWrap .lion{
+	position: absolute;
+	width: 161px;
+	height: 161px;
+	background-image: url(../img/intro/lion.png);
+	
+/* 	상단에서 80 왼쪽에서 30px 떨어진 지점에 배치 */
+	margin: 80px 0 0 30px;
+}
+#intro .introWrap .rabbit{
+	position: absolute;
+	width: 105px;
+	height: 129px;
+	background-image: url(../img/intro/rabbit.png);
+	margin: 90px 0 0 5800px;
+}
+#intro .introWrap .bear{
+	position: absolute;
+	width: 112px;
+	height: 105px;
+	background-image: url(../img/intro/bear.png);
+	margin: 310px 0 0 560px;
+	z-index: 200;
+}
+#intro .introWrap .monkey{
+	position: absolute;
+	width: 85px;
+	height: 93px;
+	background-image: url(../img/intro/monkey.png);
+	margin: 310px 0 0 50px;
+	z-index: 200;
+}
+
+#intro .cloudWrap{
+	position: relative;
+	width: 100%;
+	height: 1050px;
+	
+/* 	영역을 알아보기 위해서 배경설치 */
+/* 	background-color: pink; */
+}
+#intro .cloudWrap .leftCloud{
+	position:absolute;
+	width: 934px;
+	height: 816px;
+	background-image: url("../img/intro/cloud1.png");
+	left:0;
+	z-index:2;
+}
+#intro .cloudWrap .rightCloud{
+	position:absolute;
+	width: 843px;
+	height: 858px;
+	background-image: url("../img/intro/cloud2.png");
+	right:0;
+	z-index:1;
+}
+#intro .cloudWrap .dragonfly{
+	position:absolute;
+	width: 366px;
+	height: 228px;
+	background-image: url("../img/intro/dragonfly.png");
+	top:820px;
+}

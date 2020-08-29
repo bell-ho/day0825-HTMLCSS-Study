@@ -1,0 +1,37 @@
+/* 익스터널방식 */
+@charset "UTF-8";
+	
+	ul{
+	/* 	점 없애기 */
+		list-style: none;
+	}
+	a{
+	/* 	밑줄 없애기 */
+		text-decoration: none;
+		
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 50px;
+	}
+	
+	li{
+/* 		inline으로 바꾸기 */
+/* 		display:inline-block; */
+		
+/* 		공백제거 -> 왼쪽부터 차곡차곡 태그배치 */
+		float:left;
+		
+		width: 100px;
+		height: 50px;
+		background-color: yellow;
+		border: solid 5px red;
+/* 		text-align: center; */
+		
+		/* 텍스트 위아래 줄간격 y축 중앙에 배치하고 싶다면 속성값과 같은 높이를 주면됨*/
+/* 		line-height: 50px; */
+
+		position: relative;
+	}
+}
