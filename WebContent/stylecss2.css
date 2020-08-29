@@ -1,0 +1,163 @@
+/* 익스터널방식 */
+@charset "UTF-8";
+
+#z-index-1{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background-color: yellow;
+	z-index: 10;
+}
+#z-index-2{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background-color: blue;
+	z-index: 5;
+}
+/* #left{ */
+	float: left;
+	width: 200px;
+	height: 400px;
+	background-color: yellow;
+}
+/* #right{ */
+	float: right;
+	width: 200px;
+	height: 400px;
+	background-color: blue;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100$;
+	height: 100px;
+	background-color: yellow;
+}
+#left{
+	float:left;
+	width: 150px;
+	height: 200px;
+	background-color: blue;
+}
+section{
+	float:left;
+	width: 400px;
+	height: 200px;
+	background-color: orange;
+}
+#right{
+	float:right;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+footer{
+	clear: both;
+	width: 100%;
+	height: 100px;
+	background-color: green;
+}
+#transform_rotate{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	background-image: url("rice.png");
+	
+/* 	시계방향으로 45도 회전 (반대로 하려면 앞에 -) */
+	transform:rotate(45deg);
+}
+#transform_scale{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	margin: 200px 0 0 200px;
+	
+/* 	영역크기를 조절하는 scale */
+	transform: scale(2,2);
+}
+#transform_skew{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	background-image: url("rice.png");
+	
+/* 	입체적인 각조절 */
+	transform:skew(10deg,20deg);
+	margin-left: 100px;
+	margin-top: 100px;
+}
+#transform_translate{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	
+/* 	선택된 요소의 좌표를 조절 */
+	transform:translate(100px,200px);
+}
+#transition{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	
+/* 	변화를 주려는 CSS속성 ,로 구분하여 여려개 지정가능 많으면 all 가능*/
+	transition-property:width;
+	
+/* 	변화가 일어나는 시간 꼭 명시해야함 */
+	transition-duration:1s;
+	
+/* 	변하는 속도를 어떻게 가속시키고 감속시킬지 */
+	transition-timing-function:ease;
+	
+/* 	변화가 시작되는 시간을 지연시킬때 */
+	transition-delay:0s;
+}
+#transition:hover {
+	width: 600px;
+}
+#animation{
+	width:300px;
+	height: 300px;
+	background-color: red;
+	
+	/* 	animation이름 */
+	animation-name:changeWidth;
+	
+/* 	animation이 from 에서 to 까지 가는 시간 */
+	animation-duration:3s;
+	
+/* 	animation 재생 횟수 무한은 infinite*/
+	animation-iteration-count:infinite;
+	
+	/* 	속도 가속 감속 */
+	animation-timing-function:ease;
+	
+	/* 	진행방향의 속성값 */
+	animation-direction:nomal;
+	
+	animation-delay:0s;
+}
+
+/* keyframes 애니메이션 효과르 지정하는곳 옆에 적용할 이름을 써줘야함 */
+@keyframes changeWidth{
+	0%{
+		width:300px;
+	}
+	20%{
+		background-color:yellow;
+	}
+	50%{
+		background-color:green;
+	}
+	100%{
+		width:1000px;
+		background-color:blue;
+	}
+/* 	100%{ */
+/* 		background-color:red; */
+/* 	} */
+	
+}
