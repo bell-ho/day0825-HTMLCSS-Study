@@ -401,3 +401,179 @@ button{
 	background-image: url("../img/forest/forest3/bird_big.png");
 	margin:280px 0 0 94px;
 }
+/* <!-- 사이언스 서랍장 --> */
+#science{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/science/science_bg.png");
+}
+
+/* <!-- 사이언스 프레임 --> */
+#science .scienceWrap{
+	position: relative;
+	width: 1066px;
+	height: 611px;
+	left:50%;
+	margin-left: -533px;
+}
+
+/* <!--사이언스 왼쪽서랍장 --> */
+#science .scienceWrap .scienceLeftWrap{
+	float: left;
+}
+#science .scienceWrap .scienceLeftWrap .gly{
+	width: 230px;
+	height: 192px;
+	background-image: url("../img/science/gly.png");
+	margin-bottom: 130px;
+	margin-left: 55px;
+}
+#science .scienceWrap .scienceLeftWrap p{
+	color: #8E7577;
+	font-size: 18px;
+	line-height: 26px;
+	padding-top: 10px;
+}
+
+/* <!-- 사이언스 중앙서랍장 --> */
+#science .scienceWrap .scienceCenterWrap{
+	float: left;
+}
+#science .scienceWrap .scienceCenterWrap .purpleSteam{
+	position:relative;
+	width: 241px;
+	height: 216px;
+	background-image: url("../img/science/grape.png");
+	left: 50%;
+	margin-left: -120px;
+	z-index: 100;
+}
+#science .scienceWrap .scienceCenterWrap .funnelBack{
+	position: absolute;
+	width: 488px;
+	height: 438px;
+	background-image: url("../img/science/hopperback.png");
+	margin-top: -45px;
+}
+#science .scienceWrap .scienceCenterWrap .funnelFront{
+	position: relative;
+	width: 485px;
+	height: 390px;
+	background-image: url("../img/science/hopperfront.png");
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+/* <!-- 사이언스 오른쪽 서랍장 --> */
+#science .scienceWrap .scienceRightWrap{
+	float: right;
+}
+#science .scienceWrap .scienceRightWrap .water{
+	width: 204px;
+	height: 191px;
+	background-image: url("../img/science/water.png");
+	margin-bottom: 130px;
+}
+#science .scienceWrap .scienceRightWrap p{
+	color: #8E7577;
+	font-size: 18px;
+	line-height: 26px;
+	padding-top: 10px;
+}
+
+/* night1 섹션 */
+#night1{
+	width: 100%;
+	height: 700px;
+	background-image: url("../img/oneday/night1/night1_bg.png");
+}
+#night1 .owl{
+	position: absolute;
+	width: 334px;
+	height: 571px;
+	background-image: url("../img/oneday/night1/owl.png");
+	margin-top: 50px;
+}
+#night1 .starWrap{
+	position: relative;
+	width: 750px;
+	height: 400px;
+	top: 150px;
+	margin-left: 600px;
+}
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3 {
+	position: absolute;
+	width: 53px;
+	height: 50px;
+	background-image: url("../img/oneday/night1/star1.png");
+}
+#night1 .starWrap .star1 {
+	margin-top: 350px;
+}
+#night1 .starWrap .star2 {
+	margin-left: 650px;
+}
+#night1 .starWrap .star3 {
+	margin: 250px 0 0 500px;
+}
+
+/* night2 섹션 */
+#night2{
+	position:relative;
+	width: 100%;
+	height: 700px;
+	background-image: url("../img/oneday/night2/night2_bg.png");
+}
+#night2 .moon{
+	width: 135px;
+	height: 135px;
+	background-image: url("../img/oneday/night2/moon.png");
+}
+#night2 .moon{
+	width: 135px;
+	height: 135px;
+	background-image: url("../img/oneday/night2/moon.png");
+}
+#night2 .night2Bubble{
+	position:absolute;
+	margin: 300px 0 0 80px;
+}
+#night2 .rightMoonTree{
+	position:absolute;
+	width: 243px;
+	height: 588px;
+	background-image: url("../img/oneday/night2/moontree.png");
+	right: 0;
+	bottom: 0;
+}
+
+/* <!--morning 섹션--> */
+#morning{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/oneday/morning/morning_bg.png");
+}
+#morning .sun{
+	width: 131px;
+	height: 131px;
+	background-image: url("../img/oneday/morning/sun.png");
+}
+#morning .leftPine{
+	position:absolute;
+	width: 231px;
+	height: 329px;
+	background-image: url("../img/oneday/morning/leftPine.png");
+	top: 270px;
+}
+#morning .rightPine{
+	position:absolute;
+	width: 294px;
+	height: 609px;
+	background-image: url("../img/oneday/morning/rightPine.png");
+	right: 0;
+	bottom: 0;
+}
