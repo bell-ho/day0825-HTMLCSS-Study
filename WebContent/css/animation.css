@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* 
+	브라우저 호환성 고려
+	-webkit- 크롬 사파리
+	-moz- 파이어 폭스
+ */
+
+#intro .introWrap .lion{
+ 	/* 애니메이션 이름 */
+ 	-webkit-animation-name: spinLion ; 
+ 	
+ 	/*동작하는데 걸리는 시간 */
+ 	-webkit-animation-duration: 1500ms; 
+ 	
+ 	/* 속도 속성값 linear 끝까지 일정하게 */
+ 	-webkit-animation-timing-function: linear; 
+ 	
+	 /* 횟수 무한 */
+	-webkit-animation-iteration-count: infinite;
+	
+ 	/*애니메이션 진행방향  from~to to~from */
+ 	-webkit-animation-direction : alternate; 
+}
+@-webkit-keyframes spinLion{
+	from {
+		-webkit-transform:rotate(-10deg);
+	}
+	to{
+		-webkit-trasform:rotate(10deg);
+	}
+}
+
+#intro .introWrap .rabbit{
+  	-webkit-animation-name: rabbit; 
+  	-webkit-animation-duration: 1000ms;
+  	-webkit-animation-timing-function: linear; 
+	-webkit-animation-iteration-count: infinite; 
+ 	-webkit-animation-direction : alternate; 
+}
+@-webkit-keyframes rabbit{
+	from {
+		-webkit-transform:rotate(0deg);
+	}
+	to{
+		-webkit-transform:rotate(5deg);
+	}
+}
+
+#intro .introWrap .bear{
+ 	-webkit-animation-name: bear ; 
+ 	-webkit-animation-duration: 1000ms; 
+ 	-webkit-animation-timing-function: linear; 
+	-webkit-animation-iteration-count:  infinite; 
+ 	-webkit-animation-direction : alternate; 
+}
+@-webkit-keyframes bear{
+	from {
+		-webkit-transform:rotate(10deg);
+	}
+	to{
+		-webkit-trasform:rotate(-10deg);
+	}
+}
+
+#intro .introWrap .monkey{
+ 	-webkit-animation-name: monkey ;
+ 	-webkit-animation-duration: 800ms;
+ 	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count:  infinite; 
+ 	-webkit-animation-direction : alternate; 
+}
+@-webkit-keyframes monkey{
+	from {
+		-webkit-transform:rotate(20deg);
+	}
+	to{
+		-webkit-trasform:rotate(50deg);
+	}
+}
+
+#intro .cloudWrap .dragonfly{
+	-webkit-animation:flyDragonfly linear 7s infinite normal;
+}
+@-webkit-keyframes flyDragonfly{
+	from {
+		left: -366px;
+	}
+	to{
+			left: 110%;
+	}
+}
+
+/* Farm3 */
+#farm3 .machineWrap .timer{
+	animation:rotateTimer 10000ms linear infinite;
+}
+@keyframes rotateTimer{
+	from {
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+#farm3 .machineWrap .saw1{
+	animation:rotateLeftSaw 10000ms linear infinite;
+}
+@keyframes rotateLeftSaw{
+	from {
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+#farm3 .machineWrap .saw2{
+	animation:rotateRightSaw 10000ms linear infinite;
+}
+@keyframes rotateRightSaw{
+	from {
+		transform:rotate(360deg);
+	}
+	to{
+		transform:rotate(0deg);
+	}
+}
+
+/* forest1 */
+#forest1 .treeWrap .rabbit1{
+	animation : spinRabbitOne 1000ms linear infinite alternate;
+}
+@keyframes spinRabbitOne{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(10deg);
+	}
+}
+#forest1 .treeWrap .rabbit2{
+	animation : spinRabbitTwo 1000ms linear infinite alternate;
+}
+@keyframes spinRabbitTwo{
+	from{
+		transform:rotate(10deg);
+	}
+	to{
+	transform:rotate(0deg);
+	}
+}
+
+/* forest2 */
+#forest2 .machineWrap2 .machineLeft{
+	animation: moveLeft 1s linear infinite alternate;
+}
+@keyframes moveLeft{
+	from{
+		left:30px;
+	}
+	to{
+		left:0;
+	}
+}
+#forest2 .machineWrap2 .machineRight{
+	animation: moveRight 1s linear infinite alternate;
+}
+@keyframes moveRight{
+	from{
+		left:-30px;
+	}
+	to{
+		left:0;
+	}
+}
+#forest3 .forest3Wrap .smallBird{
+	animation: spinSmallBird 1000ms linear infinite alternate;
+}
+@keyframes spinSmallBird{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(10deg);
+	}
+}
+#forest3 .forest3Wrap .bigBird{
+	animation: spinBigBird 1000ms linear infinite alternate;
+}
+@keyframes spinBigBird{
+	from{
+		transform:rotate(-10deg);
+	}
+	to{
+		transform:rotate(10deg);
+	}
+}
+
+/* Science Section */
+#science .scienceWrap .gly{
+	animation: spinGly 1500ms linear infinite alternate;
+}
+@keyframes spinGly{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(50deg);
+	}
+}
+#science .scienceWrap .water{
+	animation: spinWater 1500ms linear infinite alternate;
+}
+@keyframes spinWater{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-50deg);
+	}
+}
+
+/* night1 */
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3{
+	animation: pulseStar 1s linear infinite alternate;
+}
+@keyframes pulseStar{
+	from{
+		transform:scale(1);
+	}
+	to{
+		transform:scale(0.8);
+	}
+}
+/* night2 */
+#night2 .moon{
+	animation: moveMoon linear 10s infinite;
+}
+@keyframes moveMoon{
+	from{
+		margin-left:-135px;
+	}
+	to{
+		margin-left:110%;
+	}
+}
+/* morning */
+#morning .sun{
+	animation: moveSun linear 10s 1500ms infinite;
+}
+@keyframes moveSun{
+	from{
+		margin-left:-135px;
+	}
+	to{
+		margin-left:110%;
+	}
+}
+
+/* kitchen */
+#kitchen .steamWrap .bubble1{
+	animation-name: bubble1;
+	animation-duration:2000ms;
+	animation-delay:0ms;
+	animation-fill-mode:forwards;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	transform-origine: 0 0;
+}
+@keyframes bubble1{
+	0%{
+		transform:translate(0px , 0px);
+	}
+	50%{
+		transform:translate(-87.5px , -150px);
+	}
+	100%{
+		transform:translate(-100px , -300px);
+	}
+}

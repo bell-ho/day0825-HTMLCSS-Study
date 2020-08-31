@@ -77,7 +77,7 @@ button{
 	width: 105px;
 	height: 129px;
 	background-image: url(../img/intro/rabbit.png);
-	margin: 90px 0 0 5800px;
+	margin: 90px 0 0 580px;
 }
 #intro .introWrap .bear{
 	position: absolute;
@@ -244,13 +244,13 @@ button{
 	margin: 140px 0 0 140px;
 }
 #farm3 .machineWrap .saw2{
-	margin: 140px 0 0 140px;
+	margin: 140px 0 0 350px;
 }
 #farm3 .machineWrap .timer{
 	position: absolute;
 	width: 103px;
 	height: 104px;
-	background-image:url("../img/farm/farm3/second.png")
+	background-image:url("../img/farm/farm3/second.png");
 	margin: 125px 0 0 45px;
 	z-index: 999;
 }
